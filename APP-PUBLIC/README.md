@@ -1,3 +1,6 @@
+# Important Steps
+1. Before starting the project, make sure to go to APP-PUBLIC Folder and write "npm install" in terminal to fetch all the dependencies related to Angular services.
+
 # APPPUBLIC
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
