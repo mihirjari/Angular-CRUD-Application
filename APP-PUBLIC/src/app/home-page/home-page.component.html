@@ -1,0 +1,27 @@
+<h1 class="text-center">List of Artists</h1>
+<div class="container-fluid table-data">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <table class="table table-hover table-bordered text-center">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Artist</th>
+                    <th scope="col">Song Name</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let musicItems of musicList">
+                    <td>{{musicItems.artist_bio[0].first_name}} {{musicItems.artist_bio[0].last_name}}</td>
+                    <td>{{musicItems.songname}}</td>
+                    <td><a routerLink="detail/{{musicItems._id}}"><button class="btn btn-success">View</button></a></td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+

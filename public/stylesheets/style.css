@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.navbar{
+  margin-bottom: 0 !important;
+}
+.homeImage{
+  
+  background: url('/images/picture1.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.text{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+#homeButton{
+  margin: 5px;
+  padding: 5px;
+  width: 100px;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+#aButton{
+  color: black;
+  outline: none;
+}
+
+#homeH1{
+  margin: 5px;
+}
+#homeH3{
+  margin: 7px;
+}

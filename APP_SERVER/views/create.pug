@@ -1,0 +1,74 @@
+extends layout
+    
+block content
+    
+    .container
+        .jumbotron 
+            h1.text-center Registration
+    .container
+        .form-inputs
+            form.was-validated(method='POST')
+                .form-group
+                    label(for='fname') Artist First Name:
+                    input#fname.form-control(type='text' placeholder='Enter First Name' name='first_name' required)
+                    .valid-feedback Valid 
+                    .invalid-feedback Please fill out the field
+                .form-group
+                    label(for='lname') Artist Last Name:
+                    input#lname.form-control(type='text' placeholder='Enter Last Name' name='last_name' required)
+                    .valid-feedback Valid 
+                    .invalid-feedback Please fill out the field
+                .form-group
+                    label(for='city') City:
+                    input#city.form-control(type='text' placeholder='Enter City' name='city' required)
+                    .valid-feedback Valid 
+                    .invalid-feedback Please fill out the field
+                .form-group
+                    label(for='song') Song Name:
+                    input#song.form-control(type='text' placeholder='Enter Song Name' name='song' required)
+                    .valid-feedback Valid 
+                    .invalid-feedback Please fill out the field
+                .form-group
+                    label(for='album') Artist's Album:
+                    input#album.form-control(type='text' placeholder='Enter Album Name' name='album' required)
+                    .valid-feedback Valid 
+                    .invalid-feedback Please fill out the field
+                .form-group
+                    label(for='language') Language:
+                    input#language.form-control(type='text' placeholder='Enter Language' name='language' required)
+                    .valid-feedback Valid 
+                    .invalid-feedback Please fill out the field
+                .form-group
+                    label(for='sold') Albums sold:
+                    input#sold.form-control(type='text' placeholder='Enter Number of Albums sold' name='sold' required)
+                    .valid-feedback Valid 
+                    .invalid-feedback Please fill out the field
+                .form-group
+                    label(for='customerFname') Your First Name:
+                    input#customerLname.form-control(type='text' placeholder='Enter Your First Name' name='customerFname' required)
+                    .valid-feedback Valid 
+                    .invalid-feedback Please fill out the field
+                .form-group
+                    label(for='customerLname') Your Last Name:
+                    input#customerLname.form-control(type='text' placeholder='Enter Your Last Name' name='customerLname' required)
+                    .valid-feedback Valid 
+                    .invalid-feedback Please fill out the field
+                .form-group
+                    label(for='customerAddress') Your Address:
+                    input#customerAddress.form-control(type='text' placeholder='Enter Your Address' name='customerAddress' required)
+                    .valid-feedback Valid 
+                    .invalid-feedback Please fill out the field
+                .form-group
+                    label(for='customerCode') Your Postal Code:
+                    input#customerCode.form-control(type='text' placeholder='Enter Your Postal Code' name='customerCode' required)
+                    .valid-feedback Valid 
+                    .invalid-feedback Please fill out the field
+                .form-group
+                    label(for='customerCard') Your Credit/Debit Card Number:
+                    input#customerCard.form-control(type='text' placeholder='Enter Your Debit/Credit Card Number' name='customerCard' required)
+                    .valid-feedback Valid 
+                    .invalid-feedback Please fill out the field
+                
+                button.btn.btn-primary(type='submit') Submit
+
+   

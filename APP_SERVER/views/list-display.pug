@@ -1,0 +1,41 @@
+extends layout
+
+block content
+
+    .container 
+        .jumbotron
+            h1.text-center The Music Store - Artists 
+    
+    .container 
+        table.table.table-hover.table-bordered
+            thead.thead-dark
+                tr
+                    th Artist
+                    th Song Name
+                    th Action
+            tbody
+                each music in artistList
+                    tr
+                        td= music.name
+                        td= music.songname
+                        td 
+                            button.btn.btn-success(type='button' style={margin: '0 10px 0 10px'} onclick= `viewArtist("${music.id}")`) View
+
+    .container
+        h5 If you want to create new Artist then please 
+            button.btn.btn-info
+                a(href='/register' style={'color':'white', 'text-decoration': 'none'}) Register 
+                            
+    
+
+ 
+
+    script(type='text/javascript').
+
+        function viewArtist(id){
+            
+            location.href = `http://localhost:3000/artists/${id}`;
+        }          
+
+      
+

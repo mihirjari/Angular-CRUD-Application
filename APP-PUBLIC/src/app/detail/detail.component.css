@@ -1,0 +1,13 @@
+.update-btn{
+    margin: 0 10px 0 0;
+}
+.artist-data, .customer-data, .artist_modal_inputs, .customer_modal_inputs{
+    list-style: none;
+}
+.submit_btn{
+
+    margin-right: 10px;
+}
+.home-btn{
+    margin-left: 10px;
+}

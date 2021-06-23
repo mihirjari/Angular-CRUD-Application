@@ -1,0 +1,36 @@
+extends layout
+    
+block content
+    style.
+
+            p{
+                text-align: justify;
+                
+                
+            }    
+            .data{
+                margin: 0 30px 0 30px;
+            }
+    .container        
+        .jumbotron
+            h1(style={"text-align": "center"}) Artist &#38; Customer Details 
+    .row.rowData(style={"margin-top": "50px"})
+        .col-md-2 
+        .col-md-8
+            .jumbotron
+              .data
+                h3(style={"text-align": "center", "font-weight": "bold"})  Artist Details : 
+                p Artist Name : #{singleArtist.artist_bio[0].first_name} #{singleArtist.artist_bio[0].last_name}
+                p City : #{singleArtist.artist_bio[0].city}
+                p Song Name : #{singleArtist.songname}
+                p Album : #{singleArtist.album}
+                p Language #{singleArtist.language}
+                p Sold : #{singleArtist.sold}
+                h3(style={"text-align": "center", "font-weight": "bold"}) Customer Details : 
+                p Customer Name : #{singleArtist.customer_details[0].customer_first_name} #{singleArtist.customer_details[0].customer_last_name}
+                p Customer Address : #{singleArtist.customer_details[0].customer_address}
+                P Customer Postal Code : #{singleArtist.customer_details[0].postal_code}
+                 
+        .col-md-2
+
+  
